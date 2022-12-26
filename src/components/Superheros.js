@@ -26,6 +26,7 @@ const Superheros = () => {
   }
   return (
     <>
+      <h1>Superheros</h1>
       {superheros.map(superhero => {
         return <div key={superhero.id}>
           <p>name is : {superhero.name}</p>
