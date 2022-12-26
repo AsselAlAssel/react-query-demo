@@ -1,0 +1,19 @@
+{
+    "superheros": [
+        {
+            "id": 1,
+            "name": "Batman",
+            "realName": "Bruce Wayne"
+        },
+        {
+            "id": 2,
+            "name": "Superman",
+            "realName": "Clark Kent"
+        },
+        {
+            "id": 3,
+            "name": "Spider man",
+            "realName": "Peter Parker"
+        }
+    ]
+}
