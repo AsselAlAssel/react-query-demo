@@ -14,6 +14,11 @@
             "id": 3,
             "name": "Spider man ",
             "realName": "Peter Parker"
+        },
+        {
+            "id": 4,
+            "name": "Batman",
+            "realName": "Bruce Wayne"
         }
     ]
 }

@@ -8,24 +8,23 @@ const fetchSuperheros = () => {
 }
 
 const RQSuperheros = () => {
-  // const [intervalTime, setIntervalTime] = useState(3000)
   const onSuccess = (data) => {
-    console.log("success", data)
+    console.log("success", data.data)
   }
   const onError = (error) => {
     console.log("error", error)
   }
 
-  const { isLoading, data, isError, error, refetch, isFetching } = useQuery(
+  const { isLoading, data, isError, error } = useQuery(
     "get-superheros",
     fetchSuperheros, {
-    enabled: false,
     onSuccess: onSuccess,
-    onError: onError
+    onError: onError,
+    select: (data) => data.data.map(hero => hero)
   }
   )
 
-  if (isLoading || isFetching) {
+  if (isLoading) {
     return <h1>Loading...</h1>
   }
   if (isError) {
@@ -34,13 +33,22 @@ const RQSuperheros = () => {
   return (
     <>
       <h2>RQSuperheros</h2>
-      <button onClick={refetch}>fetch data</button>
-      {data?.data.map(superhero => {
+      {/* <button onClick={refetch}>fetch data</button> */}
+      {/* {data?.data.map(superhero => {
         return <div key={superhero.id}>
           <p>name is : {superhero.name}</p>
           <p>real name is : {superhero.realName}</p>
         </div>
-      })}
+      })} */}
+
+      <div>
+        {data.map(hero => {
+          return <div key={hero.id}>
+            <p>{hero.name}</p>
+
+          </div>
+        })}
+      </div>
     </>
   )
 }
