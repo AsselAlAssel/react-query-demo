@@ -6,11 +6,11 @@ const RQSuperHero = () => {
 
     const { isError, error, isLoading, data } = useSuperHeroInformation(id)
 
-    if (isError)
-        return <h1>{error}</h1>
+    // if (isError)
+    //     return <h1>{error}</h1>
 
-    if (isLoading)
-        return <h1>loading.....</h1>
+    // if (isLoading)
+    //     return <h1>loading.....</h1>
 
     console.log(data)
     return (

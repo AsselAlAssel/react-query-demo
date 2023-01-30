@@ -14,6 +14,15 @@ const Nav = () => {
                 <li>
                     <NavLink to="/RQSuperheros">RQSuperheros</NavLink>
                 </li>
+                <li>
+                    <NavLink to="/RQParallelQueries">RQ Parallel Queries</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/DependQuery">DependQuery</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/pagination">pagination</NavLink>
+                </li>
             </ul>
         </nav>
     )

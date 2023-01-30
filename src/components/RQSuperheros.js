@@ -1,8 +1,22 @@
+import { useState } from "react"
 import { Link } from "react-router-dom"
-import { useSuperHeroData } from "../hooks/useSuperHerOData"
+import { useCreateSuperHero, useSuperHeroData } from "../hooks/useSuperHerOData"
 
 const RQSuperheros = () => {
   const { isLoading, data, isError, error } = useSuperHeroData()
+  const [name, setName] = useState("")
+  const [realName, setRealName] = useState("")
+  const { mutate: addHero } = useCreateSuperHero()
+
+
+  const handelSubmitCreateSuperHeroForm = (e) => {
+    e.preventDefault()
+    console.log(name, realName)
+    const heroData = { name, realName }
+    addHero(heroData)
+    setName("")
+    setRealName("")
+  }
 
   if (isLoading) {
     return <h1>Loading...</h1>
@@ -12,6 +26,15 @@ const RQSuperheros = () => {
   }
   return (
     <>
+      <form onSubmit={handelSubmitCreateSuperHeroForm}>
+        <input type="text" value={name} placeholder="name"
+          onChange={(e) => setName(e.target.value)} />
+        <input type="text" value={realName} placeholder="realName"
+          onChange={(e) => setRealName(e.target.value)} />
+        <br />
+
+        <button>submit</button>
+      </form>
       <h2>RQSuperheros</h2>
       <div>
         {data?.map(hero => {
