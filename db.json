@@ -1,0 +1,122 @@
+{
+  "superheros": [
+    {
+      "id": 1,
+      "name": "Batman",
+      "realName": "Bruce Wayne"
+    },
+    {
+      "id": 2,
+      "name": "Superman",
+      "realName": "Clark Kent"
+    },
+    {
+      "id": 3,
+      "name": "Spider man ",
+      "realName": "Peter Parker"
+    },
+    {
+      "id": 4,
+      "name": "Batman",
+      "realName": "Bruce Wayne"
+    },
+    {
+      "name": "aseeel",
+      "realName": "yes its me",
+      "id": 5
+    },
+    {
+      "name": "jsjsd",
+      "realName": "kdjksjds",
+      "id": 6
+    },
+    {
+      "name": "aseel",
+      "realName": "aseeeel",
+      "id": 7
+    },
+    {
+      "name": "aaaa",
+      "realName": "aaa",
+      "id": 8
+    }
+  ],
+  "friends": [
+    {
+      "id": 1,
+      "name": "Batman"
+    },
+    {
+      "id": 2,
+      "name": "tom"
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "name": "tom",
+      "age": 20,
+      "userKey": "tom1"
+    }
+  ],
+  "courses": [
+    {
+      "id": "tom1",
+      "name": [
+        "react",
+        "vue",
+        "angular"
+      ]
+    },
+    {
+      "id": 2,
+      "name": [
+        "react",
+        "vue",
+        "angular"
+      ]
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "name": "red"
+    },
+    {
+      "id": 2,
+      "name": "blue"
+    },
+    {
+      "id": 3,
+      "name": "green"
+    },
+    {
+      "id": 4,
+      "name": "yellow"
+    },
+    {
+      "id": 5,
+      "name": "black"
+    },
+    {
+      "id": 6,
+      "name": "white"
+    },
+    {
+      "id": 7,
+      "name": "pink"
+    },
+    {
+      "id": 8,
+      "name": "purple"
+    },
+    {
+      "id": 9,
+      "name": "orange"
+    },
+    {
+      "id": 10,
+      "name": "brown"
+    }
+  ]
+}
